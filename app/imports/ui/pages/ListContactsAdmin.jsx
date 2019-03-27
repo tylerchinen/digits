@@ -6,7 +6,7 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import ContactAdmin from '/imports/ui/components/ContactAdmin';
 
-/** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
+/** Renders a table containing all of the Contact documents. Use <ContactItem> to render each row. */
 class ListContactsAdmin extends React.Component {
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -27,7 +27,7 @@ class ListContactsAdmin extends React.Component {
   }
 }
 
-/** Require an array of Stuff documents in the props. */
+/** Require an array of Contact documents in the props. */
 ListContactsAdmin.propTypes = {
   contacts: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
@@ -35,7 +35,7 @@ ListContactsAdmin.propTypes = {
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
-  // Get access to Stuff documents.
+  // Get access to Contact documents.
   const subscription = Meteor.subscribe('ContactsAdmin');
   return {
     contacts: Contacts.find({}).fetch(),

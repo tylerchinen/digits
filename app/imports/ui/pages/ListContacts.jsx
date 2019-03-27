@@ -30,7 +30,7 @@ class ListContacts extends React.Component {
   }
 }
 
-/** Require an array of Stuff documents in the props. */
+/** Require an array of Contact documents in the props. */
 ListContacts.propTypes = {
   contacts: PropTypes.array.isRequired,
   notes: PropTypes.array.isRequired,
@@ -39,7 +39,7 @@ ListContacts.propTypes = {
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
-  // Get access to Stuff documents.
+  // Get access to Contact documents.
   const subscription = Meteor.subscribe('Contacts');
   const subscription2 = Meteor.subscribe('Notes');
   return {
