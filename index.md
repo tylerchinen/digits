@@ -6,7 +6,7 @@
 
 <h1>digits</h1>
 <p>
-<img src="/doc/homepage.JPG" alt="homepage image" width= "552" height="306">
+<img src="/doc/homepage.JPG" alt="homepage image" width= "552" height="310">
 </p>
 
 <p>This digits application enables users to:
