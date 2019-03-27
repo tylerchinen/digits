@@ -19,7 +19,12 @@ class Contact extends React.Component {
     if (error) {
       Bert.alert({ type: 'danger', message: `Delete failed: ${error.message}` });
     } else {
-      Bert.alert({ type: 'success', message: 'Delete succeeded' });
+      /* eslint-disable-next-line */
+      if (confirm("Do you really want to delete this contact?")) {
+        Bert.alert({ type: 'success', message: 'Delete succeeded' });
+      } else {
+        Bert.alert({ type: 'danger', message: `Delete Cancelled: ${error.message}` });
+      }
     }
   }
 
