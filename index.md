@@ -45,7 +45,7 @@
       </code>
     </p>
   </li>
-</ol>
+
 
 <h4>User Interface Walkthrough</h4>
 
