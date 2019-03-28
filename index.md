@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-
 <h1>digits</h1>
 <p>
 <img src="/doc/homepage.JPG" alt="homepage image" width= "552" height="310">
@@ -90,8 +84,3 @@
 <h4>Admin Mode</h4>
   <p>This mode can be accessed by users who are granted access in the settings folder of the file. This can be edited to add more Admin users. The Admin mode grants access to the "Admin" tab on the Nav bar which shows a page of all of the contacts in the application along with the user accounts who added them.</p>
   <img src="/doc/adminmode.JPG" alt="admin image" width= "552" height="331">
-
-
-
-</body>
-</html>
